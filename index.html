@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/apiTransaction.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <i class="fas fa-video"></i>
+        <div class="navbar__movie">
+          <!-- <span id="nav_movielist">Movie</span> -->
+          <ul class="movielist">
+            <li id="movie_popular"><a href="popularmovie.html">Popular</a></li>
+            <li id="movie_nowplaying">Now Playing</li>
+            <li id="movie_upcoming">Upcoming</li>
+            <li id="movie_toprated">Top Rated</li>
+          </ul>
+        </div>
+        <div class="navbar__tvshows">
+          <!-- <span id="nav_tvlist">TV Shows</span> -->
+          <ul class="tvlist">
+            <li id="tv_popular">Popular</li>
+            <li id="tv_airing">Airing Today</li>
+            <li id="tv_ontv">On TV</li>
+            <li id="tv_toprated">Top Rated</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="container__seach">
+        <h1>Welcome.</h1>
+        <h2>
+          Millions of movie and people to discover. Explore now.
+        </h2>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search for a movie..."
+          />
+          <button type="submit" class="btn" id="search">Search</button>
+        </div>
+      </div>
+      <div class="movie-box">
+        <p id="title"><b>Popular Movies</b></p>
+        <div class="popular-movie-container">
+        </div>
+        <p id="title"><b>Upcoming Movies</b></p>
+        <div class="upcoming-movie-container">
+        </div>
+      
+      </div>
+    </div>
+    <section class="search-results">
+      <div id="results">
+        <!-- <div>
+    <img src="assets/img/img.jpeg">
+</div> -->
+      </div>
+    </section>
+    <section id="details-page">
+      <div id="card">
+        <button id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div id="card-body">
+          <p id="card-name">Movie Name</p>
+          <img src="assets/img/img.jpeg" alt="" id="card-img" />
+          <p id="card-title">Title: Avengers</p>
+          <p id="card-rating">Rating: 8.9</p>
+          <p id="card-language">Language: English</p>
+          <p id="card-date">Release Date: 2021-01-23</p>
+          <p id="card-description">
+            Description:
+            <span id="description"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem dignissimos aliquam qui, neque laborum eum cum
+              facilis quae magni, quia doloremque aspernatur quaerat sint
+              officiis quidem tempore incidunt? Accusamus eligendi hic debitis,
+              inventore nihil ad corporis officia. Magni quis corrupti deleniti,
+              corporis laboriosam facere cupiditate quaerat itaque officiis, sit
+              possimus.</span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <div id="movies-container"></div>
+  </body>
+</html>
